@@ -6,9 +6,8 @@
 name: Test ASP backend
 on: [push]
 jobs:
-    run_unit_test:
-        runs-on: ubuntu-lastest
-        steps:
-            -   name: Display dotnet version
-                run: dotnet test
-        
+  run_unit_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display dotnet version
+        run: dotnet test
