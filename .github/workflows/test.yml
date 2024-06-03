@@ -1,0 +1,14 @@
+# Events: what triggers the automation (workflow)
+# Workflows: contain all jobs
+# Jobs: use the actions to perform the tasks
+# Actions: executable commands (pre-buil or manual buld)
+
+name: Test ASP backend
+on: [push]
+jobs:
+    run_unit_test:
+        runs-on: ubuntu-lastest
+        steps:
+            -   name: Display dotnet version
+                run: dotnet test
+        
