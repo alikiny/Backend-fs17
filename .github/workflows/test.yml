@@ -9,5 +9,6 @@ jobs:
   run_unit_test:
     runs-on: ubuntu-latest
     steps:
-      - name: Display dotnet version
-        run: dotnet test
+        - uses: actions/checkout@v4
+        - name: Display dotnet version
+          run: dotnet test
